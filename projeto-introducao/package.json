@@ -1,0 +1,16 @@
+{
+  "name": "bootstrap-ead",
+  "version": "1.0.0",
+  "description": "Site construido com Bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aline da cruz santos",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}
