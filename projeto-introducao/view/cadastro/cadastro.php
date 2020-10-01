@@ -11,7 +11,7 @@ session_start();
     <title>PHP - HOME</title>
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel = "stylesheet" href = "CSS/estilo.css">
+    <link rel = "stylesheet" href = "../../CSS/estilo.css">
    
 
 </head>
@@ -23,7 +23,7 @@ session_start();
             <h1 class="display-4">Cadastro</h1>
        </div>
 
-    <form action="../controller/validarCadastro.php" method="POST" id="cadastro">
+    <form action="../../controller/validarCadastro.php" method="POST" id="cadastro">
 
         <div class="form-group row">
             <label for="inputEmail3" class="col-sm-2 col-form-label"></label>
@@ -49,21 +49,21 @@ session_start();
         <div class="form-group row">
             <label for="inputEmail3" class="col-sm-2 col-form-label"></label>
             <div class="col-sm-7">
-            <input type="text" class="form-control text-center" id="inputEmail3" placeholder="Digite seu nome de usuário">
+            <input type="text" class="form-control text-center" id="inputEmail3" name='user' placeholder="Digite seu nome de usuário">
             </div>
         </div>
 
         <div class="form-group row">
             <label for="inputEmail3" class="col-sm-2 col-form-label"></label>
             <div class="col-sm-7">
-            <input type="password" class="form-control text-center" id="inputEmail3" placeholder="Digite a sua senha">
+            <input type="password" class="form-control text-center" id="inputEmail3" name = "senha" placeholder="Digite a sua senha">
             </div>
         </div>
 
         <div class="form-group row">
             <label for="inputEmail3" class="col-sm-2 col-form-label"></label>
             <div class="col-sm-7">
-            <input type="password" class="form-control text-center" id="inputEmail3" placeholder="Confirme a sua senha">
+            <input type="password" class="form-control text-center" name="confirmeSenha"id="inputEmail3" placeholder="Confirme a sua senha">
             </div>
         </div>
 

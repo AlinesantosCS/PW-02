@@ -1,22 +1,25 @@
 <?php 
-/* Váriavel name : user. Pega a váriavel e guarda no POST */
-$user = $_POST['user'];
-$pass = $_POST['pass'];
+/* Váriavel name : user. Pega a váriavel e guarda no POST 
+váriaveis - 
+Post - variável super global
+Cookie*/
+
+// exit = die
+
+$senhaLogin = $_POST['pass'];
+$emailLogin = $_POST['user'];
 
 /*var_dump($user);*/
 
-if(empty($user)){
-    echo "erro usuário";
-    die();
-}
+    if($emailLogin === ' '){
+        echo 'Campo email ou usuário está vazio! <br><br> Digite novamente';
+        die();
+    }
 
-if(empty($pass)){
-    echo "erro senha";
-    exit();
-}
+    if(empty($senhaLogin)){
+        echo 'Campo senha está vazio! <br><br> Digite novamente';
+        exit();
+    }
 
-/*exit = die - interrompe o script do php */ 
-
-echo "Sucesso";
-
+    echo 'Sucesso';
 ?>

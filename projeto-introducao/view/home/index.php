@@ -10,6 +10,7 @@ session_start();
    <meta http-equiv="X-UA-Compatible" content ="ie=edge">
     <title>PHP - HOME</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel = "stylesheet" href = "../../CSS/estilo.css">
   
    
 
@@ -23,12 +24,12 @@ session_start();
             </div>
                     <div class = "form-row">
                         <!--ml-auto deixa o alinhamento centralizado e proporcional-->
-                        <div class="my-3 ml-auto">
-                            <a class ="nav-link lead" href="login.php">Já cadastrado</a>
+                        <div class="my-3 ml-auto"><!--ml-auto/mr-auto + my centraliza-->
+                            <a class ="nav-link lead" href="../login/login.php">Já sou cadastrado</a>
                         </div>
                         <!--mr-auto : alinha automatico a margem a direita-->
-                        <div class="my-3 mr-auto">
-                            <a class ="nav-link lead" href="cadastro.php" >Preciso me cadastrar</a>
+                        <div class=" form-row my-3 mr-auto">
+                            <a class ="nav-link lead" href="../cadastro/cadastro.php" >Preciso me cadastrar</a>
                         </div>
                 </div>
             </div>

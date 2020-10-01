@@ -11,7 +11,7 @@ session_start();
     <title>PHP - HOME</title>
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel = "stylesheet" href = "CSS/estilo.css">
+    <link rel = "stylesheet" href = "../../CSS/estilo.css">
    
 
 </head>
@@ -23,30 +23,30 @@ session_start();
             <h1 class="display-4">Já sou cadastrado!</h1>
        </div>
 
-        <form action="../controller/validarLogin.php" method="POST" id="login" >
+        <form action="../../controller/validarLogin.php" method="POST" id="login" >
 
             <div class="form-row">
                 <div class="form-group col-lg-6 my-3 mx-auto">
                     <label for="inputEmail4">Email</label>
-                    <input type="email" class="form-control" placeholder="Digite seu email ou nome de usuário" name="user">
+                    <input type="email" class="form-control form-control-lg" placeholder="Digite seu email ou nome de usuário" name="user">
                 </div>
             </div>
 
             <div class="form-row">
               <div class="form-group col-lg-6 my-3 mx-auto">
                  <label for="inputPassword4">Senha</label>
-                 <input type="password" class="form-control" placeholder="Digite a sua senha" name="pass">
+                 <input type="password" class="form-control form-control-lg" placeholder="Digite a sua senha" name="pass">
               </div>
             </div>
 
             <div class="form-row">
                 <div class="col-md-5 my-3 mx-auto  ">
-                    <button type="submit" class="form-control form-control btn btn-success btn-lg  ">Entrar</button>
+                    <button type="submit" class="form-control form-control form-control-lg btn btn-success btn-lg  ">Entrar</button>
                 </div>
             </div>
             <div class="form-row">
                 <div class="col-lg-12 my-3 mr-auto">
-                <a class ="nav-link lead text-center" href="cadastro.php" >Esqueci a minha senha</a>
+                <a class ="nav-link lead text-center form-control-lg" href="cadastro.php" >Esqueci a minha senha</a>
                 </div>
             </div>
       </form>      
