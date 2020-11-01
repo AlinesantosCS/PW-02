@@ -1,7 +1,7 @@
 <?php 
     $DBservidor = '127.0.0.1';
     $DBusuario = 'root';
-    $DBsenha = '56561997ae';
+    $DBsenha = '';
     $DBbanco = 'EAD_PWII';
 
     $conn = mysqli_connect($DBservidor,$DBusuario, $DBsenha, $DBbanco);

@@ -1,4 +1,6 @@
 <?php 
+    // session_start();
+
     include_once 'conexão.php';
 
     $sql = $conn -> prepare('SELECT * FROM Usuario WHERE(email = ? OR userName = ?) AND senha = ? AND ativo = true ');
@@ -29,7 +31,7 @@
         $_SESSION['CPF'] = $linha['CPF'];
         $_SESSION['tipo'] = $linha['tipo'];
         $_SESSION['ativo'] = $linha['ativo'];
-    }
+   
 
     switch($linha['tipo']){
         case 'administrador':
@@ -43,11 +45,14 @@
         case 'cliente':
             echo "SucessoCliente";
         break;
+
         default:
         echo 'Falha Login';
-        die();
+        break;
 
 
     }
 
+    die();
+}
 ?>

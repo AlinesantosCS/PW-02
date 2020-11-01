@@ -5,21 +5,22 @@ Post - variável super global
 Cookie*/
 
 // exit = die
+session_start();
 
 $senhaLogin = $_POST['pass'];
 $emailLogin = $_POST['user'];
 
 /*var_dump($user);*/
 
-    if($emailLogin === ' '){
-        echo 'Campo email ou usuário está vazio! <br><br> Digite novamente';
+    if(empty($emailLogin)){
+        echo 'ErroUser';
         die();
     }
 
     if(empty($senhaLogin)){
-        echo 'Campo senha está vazio! <br><br> Digite novamente';
+        echo 'ErroPass';
         exit();
     }
 
-    echo 'Sucesso';
+   include '../model/ValidarLoginModel.php';
 ?>
