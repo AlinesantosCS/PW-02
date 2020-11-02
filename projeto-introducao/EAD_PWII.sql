@@ -8,8 +8,9 @@ CREATE TABLE Usuario (
     email VARCHAR(100) NOT NULL UNIQUE,
     UserName VARCHAR(100) NOT NULL UNIQUE,
     senha VARCHAR(50) NOT NULL,
-    tipo  VARCHAR(20) NOT NULL,
+    tipo VARCHAR (20) NOT NULL DEFAULT 'usuario',
     ativo BOOL NOT NULL DEFAULT true,
     CPF VARCHAR(14) NOT NULL UNIQUE);
     
-    SELECT * FROM usuario
+    SELECT * FROM Usuario;
+    INSERT INTO Usuario VALUES(1,'Aline Santos','alinesantos@gamil.com','santosAline','123456','administrador',true,'12345678911')

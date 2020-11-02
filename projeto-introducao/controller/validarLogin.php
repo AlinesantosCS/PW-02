@@ -7,20 +7,21 @@ Cookie*/
 // exit = die
 session_start();
 
+
 $senhaLogin = $_POST['pass'];
 $emailLogin = $_POST['user'];
 
 /*var_dump($user);*/
 
     if(empty($emailLogin)){
-        echo 'ErroUser';
+        echo "ErroUser";
         die();
     }
 
     if(empty($senhaLogin)){
-        echo 'ErroPass';
+        echo "ErroPass";
         exit();
     }
 
-   include '../model/ValidarLoginModel.php';
+   include_once '../model/ValidarLoginModel.php';
 ?>

@@ -9,10 +9,10 @@
 
     $sql -> execute();
 
-    $resultado = $sql -> get_result();
+    $resultado = $sql->get_result();
 
     // resultado de cada linha da tabela
-    $linha = $resultado -> fetch_assoc();
+    $linha = $resultado->fetch_assoc();
 
     $sql -> close();
     $conn -> close();
@@ -47,10 +47,8 @@
         break;
 
         default:
-        echo 'Falha Login';
+        echo 'FalhaLogin';
         break;
-
-
     }
 
     die();

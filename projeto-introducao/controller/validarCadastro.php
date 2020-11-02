@@ -1,10 +1,10 @@
 <?php 
 
-
+$tipo = ['usuario'];
 $nomeCadastro = $_POST['nome'];
 $emailCadastro= $_POST['email'];
 $cpfCadastro = $_POST['cpf'];
-$usuarioCadastro = $_POST['user'];
+$usuarioCadastro = $_POST['UserName'];
 $senhaCadastro = $_POST['senha'];
 $confirmarCadastro= $_POST['confirmeSenha'];
 
@@ -42,5 +42,7 @@ $confirmarCadastro= $_POST['confirmeSenha'];
         exit();
     }
 
-    echo 'Sucesso';
+    // echo 'Sucesso';
+
+    include '../model/cadastrarUsuario.php';
 ?>
